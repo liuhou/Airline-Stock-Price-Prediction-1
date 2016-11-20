@@ -14,13 +14,14 @@ def get_data(n = 1000):
     confidence = np.random.uniform(low = 0.0, high = 1.0, size = (n, nDays, nTweet))
 
     X = np.sum((sentiment * confidence), axis = 2).reshape(n, nDays, 1) # n * nDays * 1
+    # y = np.sin(np.sum(X.reshape(n, nDays), axis = 1)) + np.random.normal(loc = 100, scale = 5, size = (n,)) # n x 1
     y = np.sin(X.reshape(n, nDays)) + np.random.normal(loc = 100, scale = 5, size = (n,nDays)) # n x nDays
 
-    # try normalizing label
+    '''try normalizing label'''
     ymean = np.tile(np.average(y, axis = 1).reshape(n,1), (1,nDays))
     ystd = np.tile(np.std(y, axis = 1).reshape(n,1).reshape(n,1), (1,nDays))
     y = (y - ymean)/ystd
-
+    # y = np.sum(y, axis = 1)
 
     return X, y
 

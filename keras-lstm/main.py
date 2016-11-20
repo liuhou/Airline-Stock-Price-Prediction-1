@@ -50,7 +50,7 @@ def train():
     print(X.shape, y.shape)
 
     # train
-    hist = model.fit(X, y, nb_epoch = 150)
+    hist = model.fit(X, y, batch_size = 16, nb_epoch = 32)
 
     # save
     if not os.path.exists(log_path):
@@ -72,16 +72,20 @@ def test():
 
     # get testing data
     imported_data = importlib.import_module(module_data)
-    X_t, y_t = imported_data.get_data(n = 10)
+    X_t, y_t = imported_data.get_data(n = 3)
     predictions = model.predict(X_t)
 
-    # save
-    print(y_t, predictions)
+    #print(X_t)
+    print(y_t)
+    print(predictions)
 
 
-def main():
-    train()
-    #test()
+@click.command()
+@click.option('--trainmodel', is_flag = True, default=False)
+def main(trainmodel):
+    if trainmodel:
+        train()
+    test()
 
 
 if __name__ == '__main__':
