@@ -35,18 +35,20 @@ timeline_url = 'https://twitter.com/i/search/timeline'
 #headers might also change
 # headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36'}
 
-headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+# headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+
+headers = {'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:32.0) Gecko/20100101 Firefox/32.0',}
 
 def request_result(params):
     global timeline_url
     global headers
     
     res_json = None
-    
+    tmp = 'https://twitter.com/i/search/timeline?vertical=default&q=%40JetBlue%20OR%20%23JetBlue%20lang%3Aen%20since%3A2016-02-02%20until%3A2016-11-18%20include%3Aretweets&src=typd&include_available_features=1&include_entities=1&max_position=TWEET-797515708477374464-799367766293811200-BD1UO2FFu9QAAAAAAAAETAAAAAcAAAASAAAAAAAAAAAAAABAAAAAAAYAAACAAAAABAAAIAAAABAACAAAACAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAQAAIAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA&reset_error_state=false'
     while(True):
         try:
             res = requests.get(timeline_url, params=params, headers=headers)
-            # res = requests.get(tmp, headers=headers)
+            #res = requests.get(tmp, headers=headers)
             res_json = res.json()
             break
         except:
@@ -86,13 +88,13 @@ def write_result(query_word, res_json):
 
 
 if __name__ == "__main__":
-    start_time = '2015-11-19'
+    start_time = '2014-11-19'
     end_time   = '2016-11-19'
     keywords = [ #'@JetBlue OR #JetBlue', 
                  #'@VirginAmerica OR #VirginAmerica', 
-                 #'@SouthwestAir OR #SouthwestAir', 
+                 '@SouthwestAir OR #SouthwestAir', 
                  #'@united',
-                 '@AmericanAir OR #AmericanAir',
+                 #'@AmericanAir OR #AmericanAir',
                  #'@Apple OR #AAPL'
                 ]
     
@@ -111,11 +113,9 @@ if __name__ == "__main__":
                     except:
                         pass
         
-        
         # the token will change every day
-        token = "BD1UO2FFu9QAAAAAAAAETAAAAAcAAAASAAAAAAIAAAAAACAAAAAAAAAAQAAAgAAAACAAAAEAAAAQAAAQAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAQgAAAAAAIAAAAAAAAAGACAgAAAAAAAAAAAAAAAgAAAAAAAAQAAAiAAAAAEAAAAAAAABAAAAAABAAAAEAAAAAABAAAAAAAAAAAAAA"
+        token = "BD1UO2FFu9QAAAAAAAAETAAAAAcAAAASAAAAAAAAAAAAAABAAAAAAAYAAACAAAAABAAAIAAAABAACAAAACAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAQAAIAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA"
     
-
         # we need to pass the minimal_tweet_id as the "max_position" parameter
         # so that incoming tweets will have a id smaller than that    
         
@@ -130,7 +130,7 @@ if __name__ == "__main__":
                 if empty_cnt == 10:
                     break
                 
-                min_id = int(res_json['min_position'][6:24]) - 10000000000000L
+                min_id = int(res_json['min_position'][6:24]) - empty_cnt * 10000000000000L
                 res_json['min_position'] = res_json['min_position'][0:6] + str(min_id) + res_json['min_position'][24:]
             else:
                 empty_cnt = 0
