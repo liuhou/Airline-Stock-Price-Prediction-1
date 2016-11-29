@@ -6,7 +6,7 @@ Dep. Variable:                 stock0   R-squared:                       0.960
 Model:                            OLS   Adj. R-squared:                  0.959
 Method:                 Least Squares   F-statistic:                     751.2
 Date:                Tue, 29 Nov 2016   Prob (F-statistic):          8.71e-149
-Time:                        09:37:37   Log-Likelihood:                -276.40
+Time:                        11:31:02   Log-Likelihood:                -276.40
 No. Observations:                 226   AIC:                             568.8
 Df Residuals:                     218   BIC:                             596.2
 Df Model:                           7                                         
@@ -41,7 +41,7 @@ Dep. Variable:                 stock0   R-squared:                       0.956
 Model:                            OLS   Adj. R-squared:                  0.955
 Method:                 Least Squares   F-statistic:                     694.2
 Date:                Tue, 29 Nov 2016   Prob (F-statistic):          4.40e-147
-Time:                        09:37:37   Log-Likelihood:                -421.01
+Time:                        11:31:03   Log-Likelihood:                -421.01
 No. Observations:                 230   AIC:                             858.0
 Df Residuals:                     222   BIC:                             885.5
 Df Model:                           7                                         
@@ -76,7 +76,7 @@ Dep. Variable:                 stock0   R-squared:                       0.963
 Model:                            OLS   Adj. R-squared:                  0.961
 Method:                 Least Squares   F-statistic:                     799.5
 Date:                Tue, 29 Nov 2016   Prob (F-statistic):          4.04e-151
-Time:                        09:37:37   Log-Likelihood:                -280.77
+Time:                        11:31:03   Log-Likelihood:                -280.77
 No. Observations:                 225   AIC:                             577.5
 Df Residuals:                     217   BIC:                             604.9
 Df Model:                           7                                         
@@ -111,7 +111,7 @@ Dep. Variable:                 stock0   R-squared:                       0.934
 Model:                            OLS   Adj. R-squared:                  0.932
 Method:                 Least Squares   F-statistic:                     442.4
 Date:                Tue, 29 Nov 2016   Prob (F-statistic):          8.09e-126
-Time:                        09:37:38   Log-Likelihood:                -267.78
+Time:                        11:31:03   Log-Likelihood:                -267.78
 No. Observations:                 228   AIC:                             551.6
 Df Residuals:                     220   BIC:                             579.0
 Df Model:                           7                                         
@@ -146,7 +146,7 @@ Dep. Variable:                 stock0   R-squared:                       0.958
 Model:                            OLS   Adj. R-squared:                  0.957
 Method:                 Least Squares   F-statistic:                     718.8
 Date:                Tue, 29 Nov 2016   Prob (F-statistic):          8.74e-147
-Time:                        09:37:38   Log-Likelihood:                -361.21
+Time:                        11:31:04   Log-Likelihood:                -361.21
 No. Observations:                 226   AIC:                             738.4
 Df Residuals:                     218   BIC:                             765.8
 Df Model:                           7                                         
@@ -172,4 +172,39 @@ Kurtosis:                       6.225   Cond. No.                     2.31e+03
 Warnings:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 [2] The condition number is large, 2.31e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+VA
+lag n: 3
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 stock0   R-squared:                       0.988
+Model:                            OLS   Adj. R-squared:                  0.987
+Method:                 Least Squares   F-statistic:                     2541.
+Date:                Tue, 29 Nov 2016   Prob (F-statistic):          4.78e-208
+Time:                        11:31:04   Log-Likelihood:                -371.67
+No. Observations:                 230   AIC:                             759.3
+Df Residuals:                     222   BIC:                             786.8
+Df Model:                           7                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -0.2502      0.902     -0.277      0.782      -2.028       1.528
+stock1         0.9891      0.067     14.751      0.000       0.857       1.121
+stock2         0.0888      0.094      0.941      0.348      -0.097       0.275
+stock3        -0.0864      0.067     -1.294      0.197      -0.218       0.045
+tweet0        -0.6421      1.000     -0.642      0.522      -2.614       1.329
+tweet1         1.1065      1.045      1.059      0.291      -0.953       3.166
+tweet2         0.8569      1.053      0.814      0.416      -1.217       2.931
+tweet3         0.4064      1.054      0.385      0.700      -1.671       2.484
+==============================================================================
+Omnibus:                      416.236   Durbin-Watson:                   2.009
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           151279.264
+Skew:                           9.724   Prob(JB):                         0.00
+Kurtosis:                     127.127   Cond. No.                     1.40e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.4e+03. This might indicate that there are
 strong multicollinearity or other numerical problems.
