@@ -5,7 +5,7 @@ import pandas
 from statsmodels.formula.api import ols
 from statsmodels.stats.anova import anova_lm
 
-companies = ['AAL', 'AAPL', 'DAL', 'LUV', 'UAL']
+companies = ['AAL', 'AAPL', 'DAL', 'LUV', 'UAL','VA']
 n = 1
 output = open('results'+str(n)+'.txt', 'w')
 

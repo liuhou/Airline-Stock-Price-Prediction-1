@@ -6,7 +6,7 @@ Dep. Variable:                 stock0   R-squared:                       0.959
 Model:                            OLS   Adj. R-squared:                  0.959
 Method:                 Least Squares   F-statistic:                     1757.
 Date:                Tue, 29 Nov 2016   Prob (F-statistic):          8.05e-155
-Time:                        09:39:36   Log-Likelihood:                -278.40
+Time:                        11:05:01   Log-Likelihood:                -278.40
 No. Observations:                 227   AIC:                             564.8
 Df Residuals:                     223   BIC:                             578.5
 Df Model:                           3                                         
@@ -35,7 +35,7 @@ Dep. Variable:                 stock0   R-squared:                       0.955
 Model:                            OLS   Adj. R-squared:                  0.955
 Method:                 Least Squares   F-statistic:                     1608.
 Date:                Tue, 29 Nov 2016   Prob (F-statistic):          1.24e-151
-Time:                        09:39:36   Log-Likelihood:                -421.74
+Time:                        11:05:01   Log-Likelihood:                -421.74
 No. Observations:                 229   AIC:                             851.5
 Df Residuals:                     225   BIC:                             865.2
 Df Model:                           3                                         
@@ -66,7 +66,7 @@ Dep. Variable:                 stock0   R-squared:                       0.962
 Model:                            OLS   Adj. R-squared:                  0.961
 Method:                 Least Squares   F-statistic:                     1839.
 Date:                Tue, 29 Nov 2016   Prob (F-statistic):          1.94e-155
-Time:                        09:39:36   Log-Likelihood:                -280.77
+Time:                        11:05:02   Log-Likelihood:                -280.77
 No. Observations:                 224   AIC:                             569.5
 Df Residuals:                     220   BIC:                             583.2
 Df Model:                           3                                         
@@ -97,7 +97,7 @@ Dep. Variable:                 stock0   R-squared:                       0.933
 Model:                            OLS   Adj. R-squared:                  0.932
 Method:                 Least Squares   F-statistic:                     1037.
 Date:                Tue, 29 Nov 2016   Prob (F-statistic):          1.20e-130
-Time:                        09:39:36   Log-Likelihood:                -267.64
+Time:                        11:05:02   Log-Likelihood:                -267.64
 No. Observations:                 227   AIC:                             543.3
 Df Residuals:                     223   BIC:                             557.0
 Df Model:                           3                                         
@@ -128,7 +128,7 @@ Dep. Variable:                 stock0   R-squared:                       0.957
 Model:                            OLS   Adj. R-squared:                  0.957
 Method:                 Least Squares   F-statistic:                     1661.
 Date:                Tue, 29 Nov 2016   Prob (F-statistic):          3.27e-152
-Time:                        09:39:37   Log-Likelihood:                -365.61
+Time:                        11:05:02   Log-Likelihood:                -365.61
 No. Observations:                 227   AIC:                             739.2
 Df Residuals:                     223   BIC:                             752.9
 Df Model:                           3                                         
@@ -145,6 +145,35 @@ Omnibus:                       36.546   Durbin-Watson:                   1.696
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):              104.711
 Skew:                          -0.667   Prob(JB):                     1.83e-23
 Kurtosis:                       6.048   Cond. No.                         918.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+VA
+lag n: 1
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 stock0   R-squared:                       0.987
+Model:                            OLS   Adj. R-squared:                  0.987
+Method:                 Least Squares   F-statistic:                     5916.
+Date:                Tue, 29 Nov 2016   Prob (F-statistic):          1.14e-213
+Time:                        11:05:03   Log-Likelihood:                -371.82
+No. Observations:                 229   AIC:                             751.6
+Df Residuals:                     225   BIC:                             765.4
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.2699      0.702      0.385      0.701      -1.113       1.653
+stock1         0.9924      0.007    132.721      0.000       0.978       1.007
+tweet0        -0.6049      0.993     -0.609      0.543      -2.561       1.351
+tweet1         1.0214      1.040      0.982      0.327      -1.027       3.070
+==============================================================================
+Omnibus:                      415.104   Durbin-Watson:                   2.002
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           149822.133
+Skew:                           9.748   Prob(JB):                         0.00
+Kurtosis:                     126.781   Cond. No.                         734.
 ==============================================================================
 
 Warnings:

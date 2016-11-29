@@ -1,0 +1,165 @@
+AAL
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          stockincrease   R-squared:                       0.019
+Model:                            OLS   Adj. R-squared:                 -0.008
+Method:                 Least Squares   F-statistic:                    0.6980
+Date:                Sun, 27 Nov 2016   Prob (F-statistic):              0.651
+Time:                        13:04:33   Log-Likelihood:                -276.69
+No. Observations:                 226   AIC:                             567.4
+Df Residuals:                     219   BIC:                             591.3
+Df Model:                           6                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.8917      0.717      1.243      0.215      -0.522       2.305
+stock2         0.0160      0.067      0.237      0.813      -0.117       0.149
+stock3        -0.0317      0.068     -0.466      0.641      -0.166       0.102
+tweet0        -0.4405      1.013     -0.435      0.664      -2.438       1.556
+tweet1        -0.5810      0.957     -0.607      0.544      -2.467       1.305
+tweet2         1.1381      1.017      1.119      0.264      -0.866       3.142
+tweet3        -0.8986      1.184     -0.759      0.449      -3.232       1.435
+==============================================================================
+Omnibus:                       18.194   Durbin-Watson:                   1.897
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               41.165
+Skew:                          -0.342   Prob(JB):                     1.15e-09
+Kurtosis:                       4.976   Cond. No.                     1.38e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.38e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+AAPL
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          stockincrease   R-squared:                       0.059
+Model:                            OLS   Adj. R-squared:                  0.034
+Method:                 Least Squares   F-statistic:                     2.349
+Date:                Sun, 27 Nov 2016   Prob (F-statistic):             0.0321
+Time:                        13:04:33   Log-Likelihood:                -421.35
+No. Observations:                 230   AIC:                             856.7
+Df Residuals:                     223   BIC:                             880.8
+Df Model:                           6                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      7.7449      2.722      2.845      0.005       2.381      13.109
+stock2        -0.0061      0.067     -0.091      0.928      -0.137       0.125
+stock3        -0.0346      0.067     -0.520      0.604      -0.166       0.097
+tweet0        -5.3521      1.768     -3.028      0.003      -8.836      -1.869
+tweet1        -0.8618      1.728     -0.499      0.618      -4.266       2.543
+tweet2        -2.9915      1.963     -1.524      0.129      -6.860       0.877
+tweet3         1.1053      2.703      0.409      0.683      -4.221       6.432
+==============================================================================
+Omnibus:                       25.017   Durbin-Watson:                   1.885
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               96.110
+Skew:                          -0.270   Prob(JB):                     1.35e-21
+Kurtosis:                       6.120   Cond. No.                     4.88e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.88e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+DAL
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          stockincrease   R-squared:                       0.029
+Model:                            OLS   Adj. R-squared:                  0.002
+Method:                 Least Squares   F-statistic:                     1.078
+Date:                Sun, 27 Nov 2016   Prob (F-statistic):              0.377
+Time:                        13:04:33   Log-Likelihood:                -280.88
+No. Observations:                 225   AIC:                             575.8
+Df Residuals:                     218   BIC:                             599.7
+Df Model:                           6                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.7274      0.827      0.880      0.380      -0.902       2.357
+stock2        -0.0843      0.067     -1.254      0.211      -0.217       0.048
+stock3         0.0538      0.067      0.806      0.421      -0.078       0.185
+tweet0         0.8886      1.205      0.738      0.462      -1.486       3.263
+tweet1        -0.1963      1.381     -0.142      0.887      -2.918       2.526
+tweet2         0.4814      1.380      0.349      0.727      -2.237       3.200
+tweet3         0.0814      1.317      0.062      0.951      -2.515       2.678
+==============================================================================
+Omnibus:                       18.025   Durbin-Watson:                   1.941
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               24.263
+Skew:                          -0.545   Prob(JB):                     5.39e-06
+Kurtosis:                       4.182   Cond. No.                     1.71e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.71e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+LUV
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          stockincrease   R-squared:                       0.055
+Model:                            OLS   Adj. R-squared:                  0.030
+Method:                 Least Squares   F-statistic:                     2.156
+Date:                Sun, 27 Nov 2016   Prob (F-statistic):             0.0484
+Time:                        13:04:33   Log-Likelihood:                -267.79
+No. Observations:                 228   AIC:                             549.6
+Df Residuals:                     221   BIC:                             573.6
+Df Model:                           6                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.1200      0.931      0.129      0.898      -1.715       1.955
+stock2         0.0026      0.068      0.037      0.970      -0.132       0.137
+stock3        -0.0399      0.068     -0.583      0.561      -0.175       0.095
+tweet0         0.6328      1.121      0.565      0.573      -1.576       2.841
+tweet1         2.1719      1.262      1.722      0.087      -0.314       4.658
+tweet2         0.4633      1.214      0.381      0.703      -1.930       2.857
+tweet3         0.0517      1.407      0.037      0.971      -2.721       2.824
+==============================================================================
+Omnibus:                       70.008   Durbin-Watson:                   1.977
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              264.671
+Skew:                          -1.207   Prob(JB):                     3.37e-58
+Kurtosis:                       7.693   Cond. No.                     1.76e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.76e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+UAL
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          stockincrease   R-squared:                       0.018
+Model:                            OLS   Adj. R-squared:                 -0.009
+Method:                 Least Squares   F-statistic:                    0.6559
+Date:                Sun, 27 Nov 2016   Prob (F-statistic):              0.685
+Time:                        13:04:34   Log-Likelihood:                -363.56
+No. Observations:                 226   AIC:                             741.1
+Df Residuals:                     219   BIC:                             765.1
+Df Model:                           6                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      1.1055      1.072      1.031      0.304      -1.007       3.218
+stock2         0.0465      0.068      0.680      0.497      -0.088       0.181
+stock3        -0.0572      0.069     -0.824      0.411      -0.194       0.080
+tweet0        -1.4166      1.487     -0.952      0.342      -4.348       1.515
+tweet1        -0.6451      1.408     -0.458      0.647      -3.420       2.130
+tweet2         1.3832      1.493      0.926      0.355      -1.560       4.326
+tweet3        -0.6967      1.742     -0.400      0.690      -4.129       2.736
+==============================================================================
+Omnibus:                       39.458   Durbin-Watson:                   1.716
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              112.926
+Skew:                          -0.728   Prob(JB):                     3.01e-25
+Kurtosis:                       6.142   Cond. No.                     1.89e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.89e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
